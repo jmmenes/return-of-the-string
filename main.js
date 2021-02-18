@@ -27,17 +27,13 @@ function yellLouder(string) {
 }
 
 function getInitials(string) {
-  return string[0] + "." + string.charAt(index) + ".";
-}
+  const i1 = string[0];
+  const spaceIndex = string.indexOf(" ");
+  const i2 = string[spaceIndex + 1];
+  return i1 + "." + i2 + ".";
 
-// it takes in a parameter of type String representing a name and returns one string with
-// the initials, each followed by a period. See the test for examples. Hint: the first
-// name's initials are always in the same place, but since we don't know how long the
-// first name will be, the second initial is harder. But! There's a method that will
-// return to you the index at which a character is in a string (sort of the reverse
-//   of square brackets, which give you the character at a given index), and the
-//   second initial always comes near a very specific character... Good luck on
-//   this one, it's a bit tough!
+  // return string[0] + "." + string[string.indexOf(" ") + 1] + ".";
+}
 
 /********************************************************************
  * THIS CODE IS FOR INTERNAL USE ONLY. DON'T CHANGE ANYTHING BELOW! *
